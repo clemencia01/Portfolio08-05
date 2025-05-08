@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Clémencia ATAYI - Développeuse Web, Leader et Artisane à Lomé, Togo">
+  <meta name="keywords" content="Clémencia ATAYI, CLAS Fashion Center, stylisme, développement web, formation artisanale">
+  <title>Portfolio Clémencia ATAYI</title>
+  <!-- Bootstrap minimal (juste la grille et quelques composants) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome pour les icônes -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container">
+      <a class="navbar-brand" href="#home">CLAS Portfolio</a>
+      <ul class="navbar-nav d-flex flex-row">
+        <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+        <li class="nav-item ms-3"><a class="nav-link" href="#about">À propos</a></li>
+        <li class="nav-item ms-3"><a class="nav-link" href="#skills">Compétences</a></li>
+        <li class="nav-item ms-3"><a class="nav-link" href="#projects">Projets</a></li>
+        <li class="nav-item ms-3"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+      <button class="mobile-menu-btn" aria-label="Menu de navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menu mobile -->
+  <div class="mobile-menu">
+    <button class="close-menu" aria-label="Fermer le menu">
+      <i class="fas fa-times"></i>
+    </button>
+    <a href="#home" class="mobile-link">Accueil</a>
+    <a href="#about" class="mobile-link">À propos</a>
+    <a href="#skills" class="mobile-link">Compétences</a>
+    <a href="#projects" class="mobile-link">Projets</a>
+    <a href="#contact" class="mobile-link">Contact</a>
+  </div>
+
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="container">
+      <h1 class="text-orange animate-fadeIn"> Sakélé Clémencia Létaecia ATAYI</h1>
+      <p>Développeuse Web, Leader, Artisane Accessoiriste & Styiste</p>
+      <a href="#projects" class="btn btn-orange mt-3">Découvrir mes projets</a>
+    </div>
+  </header>
+
+  <!-- À propos -->
+  <section id="about">
+    <div class="container">
+      <h2 class="text-orange text-center mb-4">À propos</h2>
+      <div class="card-custom p-4 mx-auto" style="max-width: 800px;">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <img src="Miss CLAS.jpg" alt="Clémencia ATAYI" class="profile-img">
+          </div>
+          <div class="col-md-8">
+            <p>Passionnée par le développement web, l'accompagnement des jeunes et la création artisanale, je combine expertise technique et créativité. Promotrice de CLAS Fashion Center, je forme des artisans en accessoirise, stylisme et marketing digital tout en concevant des accessoires uniques en perles et tissu. Mon parcours en mathématiques et mon leadership me permettent de digitaliser l'artisanat africain avec impact.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="skills">
+    <div class="container">
+      <h2 class="text-orange text-center mb-4">Compétences</h2>
+      <div class="card-custom p-4 mx-auto" style="max-width: 800px;">
+        <div class="text-center">
+          <span class="skill-badge"><i class="fas fa-code"></i> HTML, CSS, JavaScript, PHP, Laravel,Bootstrap</span>
+          <span class="skill-badge"><i class="fas fa-users"></i> Leadership & Mentorat</span>
+          <span class="skill-badge"><i class="fas fa-palette"></i> Artisanat & Stylisme</span>
+          <span class="skill-badge"><i class="fas fa-chart-line"></i> Marketing Digital</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projects">
+    <div class="container">
+      <h2 class="text-orange text-center mb-4">Projets</h2>
+      <div class="card-custom p-4 mx-auto" style="max-width: 1200px;">
+        <div class="carousel-container">
+          <div class="carousel-slide active">
+            <img src="https://placehold.co/800x500" alt="Programme Dclic - Formation numérique" class="carousel-img">
+            <div class="carousel-caption">
+              <h3>Programme DCLIC</h3>
+              <p>Accompagnement pour les compétences numériques des jeunes.</p>
+              <a href="#" class="btn btn-orange btn-sm">En savoir plus</a>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://placehold.co/800x500" alt="CLAS Fashion Center - Création artisanale" class="carousel-img">
+            <div class="carousel-caption">
+              <h3>CLAS Fashion Center</h3>
+              <p>Formation en stylisme et création d'accessoires en perles.</p>
+              <a href="#" class="btn btn-orange btn-sm">En savoir plus</a>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://placehold.co/800x500" alt="Collection 2024 - Robe en tissu" class="carousel-img">
+            <div class="carousel-caption">
+              <h3>Collection 2024</h3>
+              <p>Robe en pagne pour défilé à Lomé.</p>
+              <a href="#" class="btn btn-orange btn-sm">En savoir plus</a>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://placehold.co/800x500" alt="Atelier Perles - Accessoires" class="carousel-img">
+            <div class="carousel-caption">
+              <h3>Atelier Perles</h3>
+              <p>Formation à la création d'accessoires en perles.</p>
+              <a href="#" class="btn btn-orange btn-sm">En savoir plus</a>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://placehold.co/800x500" alt="Marketing Digital - Formation" class="carousel-img">
+            <div class="carousel-caption">
+              <h3>Marketing Digital</h3>
+              <p>Atelier pour artisans sur la vente en ligne.</p>
+              <a href="#" class="btn btn-orange btn-sm">En savoir plus</a>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://placehold.co/800x500" alt="Projet Artisanal - Création" class="carousel-img">
+            <div class="carousel-caption">
+              <h3>Projet Artisanal</h3>
+              <p>Accessoire unique en tissu et perles.</p>
+              <a href="#" class="btn btn-orange btn-sm">En savoir plus</a>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://placehold.co/800x500" alt="Défilé Lomé 2024" class="carousel-img">
+            <div class="carousel-caption">
+              <h3>Défilé Lomé 2024</h3>
+              <p>Présentation de créations artisanales.</p>
+              <a href="#" class="btn btn-orange btn-sm">En savoir plus</a>
+            </div>
+          </div>
+          <div class="carousel-slide">
+            <img src="https://placehold.co/800x500" alt="Formation Kara - Stylisme" class="carousel-img">
+            <div class="carousel-caption">
+              <h3>Formation Kara</h3>
+              <p>Atelier de stylisme à Kara.</p>
+              <a href="#" class="btn btn-orange btn-sm">En savoir plus</a>
+            </div>
+          </div>
+          
+          <button class="carousel-btn prev" aria-label="Projet précédent">
+            <i class="fas fa-chevron-left"></i>
+          </button>
+          <button class="carousel-btn next" aria-label="Projet suivant">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+          
+          <div class="carousel-indicators">
+            <!-- Les indicateurs seront générés par JavaScript -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <div class="container">
+      <h2 class="text-orange text-center mb-4">Contact</h2>
+      <div class="card-custom p-4 mx-auto" style="max-width: 500px;">
+        <form id="contact-form">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nom" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Email" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" placeholder="Message" rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-orange w-100">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast notifications -->
+  <div class="toast-container"></div>
+
+  <!-- Footer -->
+  <footer>
+    <p>Contactez-moi : <a href="mailto:leciatayi1@gmail.com"><i class="fas fa-envelope"></i> leciatayi1@gmail.com </a></p>
+    <p>
+      <a href="https://www.tiktok.com/@miss.clas?_t=ZS-8wC3AEE5cQs&_r=1" aria-label="TikTok de Clémencia"><i class="fab fa-tiktok"></i> TikTok</a> | 
+      <a href="https://wa.me/message/XOZRUMHKAQERP1" aria-label="WhatsApp de Clémencia"><i class="fab fa-whatsapp"></i> WhatsApp</a> | 
+      <a href="https://www.linkedin.com/in/sakele-atayi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" aria-label="LinkedIn de Clémencia"><i class="fab fa-linkedin"></i> LinkedIn</a> | 
+      <a href="https://www.facebook.com/share/1BgWRezHv4/?mibextid=qi2Omg" aria-label="Facebook de Clémencia"><i class="fab fa-facebook"></i> Facebook</a>
+    </p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Menu mobile
+    const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const closeMenuBtn = document.querySelector('.close-menu');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.add('active');
+    });
+
+    closeMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+    });
+
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('active');
+      });
+    });
+
+    // Carrousel
+    const slides = document.querySelectorAll('.carousel-slide');
+    const prevBtn = document.querySelector('.carousel-btn.prev');
+    const nextBtn = document.querySelector('.carousel-btn.next');
+    const indicators = document.querySelector('.carousel-indicators');
+    let currentSlide = 0;
+
+    // Créer les indicateurs
+    slides.forEach((_, index) => {
+      const dot = document.createElement('div');
+      dot.classList.add('carousel-dot');
+      if (index === 0) dot.classList.add('active');
+      dot.addEventListener('click', () => {
+        goToSlide(index);
+      });
+      indicators.appendChild(dot);
+    });
+
+    const dots = document.querySelectorAll('.carousel-dot');
+
+    function goToSlide(n) {
+      slides[currentSlide].classList.remove('active');
+      dots[currentSlide].classList.remove('active');
+      
+      currentSlide = (n + slides.length) % slides.length;
+      
+      slides[currentSlide].classList.add('active');
+      dots[currentSlide].classList.add('active');
+    }
+
+    prevBtn.addEventListener('click', () => {
+      goToSlide(currentSlide - 1);
+    });
+
+    nextBtn.addEventListener('click', () => {
+      goToSlide(currentSlide + 1);
+    });
+
+    // Auto-rotation du carrousel
+    let carouselInterval = setInterval(() => {
+      goToSlide(currentSlide + 1);
+    }, 5000);
+
+    // Arrêter la rotation au survol
+    const carouselContainer = document.querySelector('.carousel-container');
+    carouselContainer.addEventListener('mouseenter', () => {
+      clearInterval(carouselInterval);
+    });
+
+    carouselContainer.addEventListener('mouseleave', () => {
+      carouselInterval = setInterval(() => {
+        goToSlide(currentSlide + 1);
+      }, 5000);
+    });
+
+    // Animation au défilement
+    const sections = document.querySelectorAll('section');
+    
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1
+    };
+
+    const observer = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.animation = 'fadeInUp 0.6s ease-out forwards';
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => {
+      observer.observe(section);
+    });
+
+    // Formulaire de contact
+    const contactForm = document.getElementById('contact-form');
+    const toastContainer = document.querySelector('.toast-container');
+
+    function showToast(message, type = 'success') {
+      const toast = document.createElement('div');
+      toast.classList.add('toast', type);
+      toast.innerHTML = `
+        <div>${message}</div>
+        <button class="toast-close">&times;</button>
+      `;
+      
+      toastContainer.appendChild(toast);
+      
+      const closeBtn = toast.querySelector('.toast-close');
+      closeBtn.addEventListener('click', () => {
+        toast.remove();
+      });
+      
+      // Auto-fermeture après 5 secondes
+      setTimeout(() => {
+        toast.remove();
+      }, 5000);
+    }
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(contactForm);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const message = formData.get('message');
+      
+      // Simuler l'envoi du formulaire
+      setTimeout(() => {
+        showToast('Message envoyé ! Merci pour votre message.', 'success');
+        contactForm.reset();
+      }, 1000);
+    });
+
+    // Smooth scroll pour les ancres
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        
+        if (targetElement) {
+          window.scrollTo({
+            top: targetElement.offsetTop - 70,
+            behavior: 'smooth'
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
