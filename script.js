@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     })
   
-    // Contact form submission
+    /* Contact form submission
     const contactForm = document.getElementById("contactForm")
     if (contactForm) {
       contactForm.addEventListener("submit", (e) => {
@@ -85,7 +85,67 @@ document.addEventListener("DOMContentLoaded", () => {
         // Reset form
         contactForm.reset()
       })
-    }
+    }*/
+
+      emailjs.init("MjzK-W8e3IqgnqtjA");
+
+  const contactForm = document.getElementById("contactForm");
+  if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      // Valider le format de l'e-mail
+      if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+        alert("Veuillez entrer un e-mail valide.");
+        return;
+      }
+
+      const templateParams = {
+        name: name,
+        email: email,
+        message: message,
+      };
+
+      // Envoyer l'e-mail via EmailJS
+      
+       emailjs.send("portfolio", "template_pfkijrf", templateParams)
+        .then(
+          (response) => {
+            console.log("E-mail envoyé avec succès !", response.status, response.text);
+            alert("Merci pour votre message ! Je vous répondrai dès que possible.");
+            contactForm.reset();
+          },
+          (error) => {
+            console.error("Erreur lors de l'envoi de l'e-mail :", error);
+            alert("Une erreur s'est produite. Veuillez réessayer.");
+          }
+        );
+    });
+  }
+
+  // Bouton WhatsApp
+  const sendWhatsapp = document.getElementById("sendWhatsapp");
+  if (sendWhatsapp) {
+    sendWhatsapp.addEventListener("click", () => {
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const message = document.getElementById("message").value;
+
+      if (!name || !email || !message) {
+        alert("Veuillez remplir tous les champs.");
+        return;
+      }
+
+      const phoneNumber = "+22891699261"; 
+      const formattedMessage = `Nom: ${name}%0AEmail: ${email}%0AMessage: ${message}`;
+      const whatsappUrl = `https://wa.me/${phoneNumber}?text=${formattedMessage}`;
+      window.open(whatsappUrl, "_blank");
+    });
+  }
   
     // Animate sections on scroll
     const sections = document.querySelectorAll("section")
