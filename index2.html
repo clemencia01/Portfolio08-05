@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio de Clémencia ATAYI - Développeuse Web, Leader et Artisane Accessoiriste Styiste  à Lomé, Togo">
+  <meta name="keywords" content=" Sakélé Clémencia Létaecia ATAYI, CLAS Fashion Center, stylisme, développement web, formation artisanale">
+  <title>Portfolio Sakélé Clémencia Létaecia ATAYI</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">CLAS Portfolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Compétences</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Parcours et Réalisations  </a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="home" class="hero">
+    <div class="container">
+      <h1 class="text-orange">Sakélé Clémencia Létaecia ATAYI</h1>
+      <p>Développeuse Web, Leader, Artisane Accessoiriste & Styiste</p>
+      <a href="#projects" class="btn btn-orange mt-3">Découvrir mes projets</a>
+    </div>
+  </header>
+
+  <!-- À propos -->
+  <section id="about">
+    <h2 class="text-orange text-center">À propos</h2>
+    <div class="card card-custom p-4 mx-auto" style="max-width: 800px;">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <img src="Miss CLAS.jpg" alt="Clémencia ATAYI, fondatrice de CLAS Fashion Center" class="img-fluid rounded-circle">
+        </div>
+        <div class="col-md-8">
+          <p>Passionnée par le Développement Web, l'accompagnement des jeunes et la création artisanale, je combine expertise technique et créativité. Promotrice de CLAS Fashion Center, je forme des artisans en stylisme et marketing digital tout en concevant des accessoires uniques en perles et tissu. Mon parcours en mathématiques et mon leadership me permettent de digitaliser l'artisanat africain avec impact.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compétences -->
+  <section id="skills">
+    <h2 class="text-orange text-center">Compétences</h2>
+    <div class="card card-custom p-4 mx-auto" style="max-width: 800px;">
+      <div class="text-center">
+        <span class="skill-badge"><i class="fas fa-code"></i> HTML, CSS, JavaScript, PHP, Laravel,Bootstrap</span>
+        <span class="skill-badge"><i class="fas fa-users"></i> Leadership & Mentorat</span>
+        <span class="skill-badge"><i class="fas fa-palette"></i> Artisanat & Stylisme</span>
+        <span class="skill-badge"><i class="fas fa-chart-line"></i> Marketing Digital</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projets -->
+  <section id="projects">
+    <h2 class="text-orange text-center">Parcours et Réalisations</h2>
+    <div class="card card-custom p-4 mx-auto" style="max-width: 1200px;">
+      <!-- Filtres -->
+      <div class="text-center mb-4">
+        <button class="filter-btn active" data-filter="all">Tous</button>
+        <button class="filter-btn" data-filter="stylisme">Stylisme</button>
+        <button class="filter-btn" data-filter="formations">Formations</button>
+        <button class="filter-btn" data-filter="accessoirisme">Accessoirisme</button>
+      </div>
+      <!-- Carrousel -->
+      <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
+        <div class="carousel-inner">
+          <article class="carousel-item active" data-category="formations">
+            <img src="DCLIC MON GROUP.jpg" alt="Programme Dclic - Formation numérique pour jeunes">
+            <div class="carousel-caption">
+              <h3>Programme D-CLIC</h3>
+              <p>J'ai ma formation en Développement Web au sein du programme D-CLIC formez-vous au numérique de l'OIF</p>
+              <button class="btn btn-orange btn-sm" data-bs-toggle="modal" data-bs-target="#dclicModal">En savoir plus</button>
+            </div>
+          </article>
+          <article class="carousel-item" data-category="stylisme">
+            <img src="clas fashion center.jpg" alt="CLAS Fashion Center - Créations artisanales">
+            <div class="carousel-caption">
+              <h3>CLAS Fashion Center</h3>
+              <p>Formation en stylisme et création d'accessoires en perles.</p>
+              <button class="btn btn-orange btn-sm" data-bs-toggle="modal" data-bs-target="#clasFashionModal">En savoir plus</button>
+            </div>
+          </article>
+          <article class="carousel-item" data-category="stylisme">
+            <img src="Moi en rose.jpg" alt="Collection 2024 - Robe en tissu africain">
+            <div class="carousel-caption">
+              <h3>Collection 2024</h3>
+              <p>Robe en satin pour défilé à Lomé.</p>
+              <button class="btn btn-orange btn-sm" data-bs-toggle="modal" data-bs-target="#collection2024Modal">En savoir plus</button>
+            </div>
+          </article>
+          <article class="carousel-item" data-category="accessoirisme">
+            <img src="2PN SOURIRE.jpg " alt="Atelier Perles - Accessoires artisanaux">
+            <div class="carousel-caption">
+              <h3>Atelier Perles</h3>
+              <p>Formation à la création d'accessoires en perles.</p>
+              <button class="btn btn-orange btn-sm" data-bs-toggle="modal" data-bs-target="#atelierPerlesModal">En savoir plus</button>
+            </div>
+          </article>
+          <article class="carousel-item" data-category="formations">
+            <img src="Danyi.jpg" alt="Formation Marketing Digital pour artisans">
+            <div class="carousel-caption">
+              <h3>Formation Danyi </h3>
+              <p>Atelier pour artisans sur la vente en ligne.</p>
+              <button class="btn btn-orange btn-sm" data-bs-toggle="modal" data-bs-target="#marketingDigitalModal">En savoir plus</button>
+            </div>
+          </article>
+          <article class="carousel-item" data-category="accessoirisme">
+            <img src="Agbalepedo1_2.jpg" alt="Projet Artisanal - Accessoire unique">
+            <div class="carousel-caption">
+              <h3>Projet Artisanal</h3>
+              <p>Accessoire unique en tissu et perles.</p>
+              <button class="btn btn-orange btn-sm" data-bs-toggle="modal" data-bs-target="#projetArtisanalModal">En savoir plus</button>
+            </div>
+          </article>
+          <article class="carousel-item" data-category="stylisme">
+            <img src="Formation Adidogomé_2.jpg" alt="Défilé Lomé 2024 - Créations artisanales">
+            <div class="carousel-caption">
+              <h3>Formation Lome</h3>
+              <p>.</p>
+              <button class="btn btn-orange btn-sm" data-bs-toggle="modal" data-bs-target="#defileLomeModal">En savoir plus</button>
+            </div>
+          </article>
+          <article class="carousel-item" data-category="formations">
+            <img src="Photo de CLAS FASHION (7).jpg" alt="Formation Kara - Stylisme et marketing">
+            <div class="carousel-caption">
+              <h3>Formation Kara</h3>
+              <p>Atelier d'accessoirime à Kara (Sacs en perles).</p>
+              <button class="btn btn-orange btn-sm" data-bs-toggle="modal" data-bs-target="#formationKaraModal">En savoir plus</button>
+            </div>
+          </article>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#projectCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Suivant</span>
+        </button>
+      </div>
+      <!-- Grille statique -->
+      <div class="gallery-grid row g-3 mt-4">
+        <article class="col-md-12 col-sm-12" data-category="formations">
+          <img src="DCLIC MON GROUP.jpg" alt="Programme Dclic - Formation numérique pour jeunes" data-bs-toggle="modal" data-bs-target="#dclicModal">
+          <h4>Programme D-CLIC</h4>
+        <article class="col-md-6 col-sm-12" data-category="stylisme">
+          <img src="clas fashion center.jpg" alt="CLAS Fashion Center - Créations artisanales" data-bs-toggle="modal" data-bs-target="#clasFashionModal">
+          <h4>CLAS Fashion Center</h4>
+        </article>
+        <article class="col-md-6 col-sm-12" data-category="stylisme">
+          <img src="Moi en rose.jpg" alt="Collection 2024 - Robe en tissu africain" data-bs-toggle="modal" data-bs-target="#collection2024Modal">
+          <h4>Collection 2024</h4>
+        </article>
+        <article class="col-md-6 col-sm-12" data-category="accessoirisme">
+          <img src="2PN SOURIRE_2.jpg" alt="Atelier Perles - Accessoires artisanaux" data-bs-toggle="modal" data-bs-target="#atelierPerlesModal">
+          <h4>Atelier Perles</h4>
+        </article>
+        <article class="col-md-6 col-sm-12" data-category="accessoirisme">
+          <img src="Danyi.jpg" alt="Formation Marketing Digital pour artisans" data-bs-toggle="modal" data-bs-target="#marketingDigitalModal">
+          <h4>Formation Danyi </h4>
+        </article>
+        <article class="col-md-6 col-sm-12" data-category="stylisme">
+          <img src="Formation Adidogomé_2.jpg" alt="Défilé Lomé 2024 - Créations artisanales" data-bs-toggle="modal" data-bs-target="#defileLomeModal">
+           <h4>Formation Lome </h4>
+        </article>
+        <article class="col-md-6 col-sm-12" data-category="accessoirisme">
+          <img src="Photo de CLAS FASHION (7).jpg" alt="Formation Kara - Stylisme et marketing" data-bs-toggle="modal" data-bs-target="#formationKaraModal">
+          <h4>Formation Kara</h4>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="text-orange text-center">Contact</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-6">
+        <div class="card card-custom p-4">
+          <h3 class="mb-4">Envoyez-moi un message</h3>
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="name" class="form-label">Nom</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-orange w-100">Envoyer</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-custom p-4">
+          <h3 class="mb-4">Informations</h3>
+          <div class="mb-4">
+            <h4><i class="fas fa-map-marker-alt text-orange me-2"></i> Adresse</h4>
+            <p>Lomé, Togo</p>
+          </div>
+          <div class="mb-4">
+            <h4><i class="fas fa-phone text-orange me-2"></i> Téléphone</h4>
+            <p>+228 91699261</p>
+          </div>
+          <div class="mb-4">
+            <h4><i class="fas fa-envelope text-orange me-2"></i> Email</h4>
+            <p>leciatayi1@gmail.com</p>
+          </div>
+          <div class="social-links">
+  <a href="https://www.linkedin.com/in/sakele-atayi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_appi" target="_blank" class="me-2" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in text-orange"></i>
+  </a>
+  <a href="https://www.facebook.com/share/1BgWRezHv4/?mibextid=qi2Omg" target="_blank" class="me-2" aria-label="Facebook">
+    <i class="fab fa-facebook-f text-orange"></i>
+  </a>
+  <a href="https://www.tiktok.com/@miss.clas?_t=ZS-8wC3AEE5cQs&_r=1" target="_blank" class="me-2" aria-label="TikTok">
+    <i class="fab fa-tiktok text-orange"></i>
+  </a>
+  <a href="https://wa.me/message/XOZRUMHKAQERP1" target="_blank" class="me-2" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp text-orange"></i>
+  </a>
+</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p>&copy; 2025 Sakélé Clémencia Létaecia ATAYI. Tous droits réservés.</p>
+      <div class="social-links mt-3">
+  <a href="https://www.linkedin.com/in/sakele-atayi?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" class="me-2" aria-label="LinkedIn">
+    <i class="fab fa-linkedin-in text-orange"></i>
+  </a>
+  <a href="https://www.facebook.com/share/1BgWRezHv4/?mibextid=qi2Omg" target="_blank" class="me-2" aria-label="Facebook">
+    <i class="fab fa-facebook-f text-orange"></i>
+  </a>
+  <a href="https://www.tiktok.com/@miss.clas?_t=ZS-8wC3AEE5cQs&_r=1" target="_blank" class="me-2" aria-label="TikTok">
+    <i class="fab fa-tiktok text-orange"></i>
+  </a>
+  <a href="https://wa.me/message/XOZRUMHKAQERP1" target="_blank" class="me-2" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp text-orange"></i>
+  </a>
+</div>
+    </div>
+  </footer>
+
+  <!-- Modales -->
+  <div class="modal fade" id="dclicModal" tabindex="-1" aria-labelledby="dclicModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="dclicModalLabel">Programme D-CLIC</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="DCLIC MON GROUP.jpg" alt="Programme Dclic - Formation numérique" class="img-fluid mb-3">
+          <p>J'ai suivi une formation en Développement Web dans le cadre du programme D-CLIC 'Formez-vous au numérique' de l'Organisation internationale de la Francophonie (OIF). Au sein de ce programme, j'ai assumé le rôle de leader d'un groupe composé de 10 personnes. Grâce à une gestion exemplaire et une approche humaine, notre équipe a été distinguée comme le meilleur groupe du programme. <a href="https://youtube.com/live/L-0t_H8--LI?feature=share
+">Vidéo de la remise d'attestion</a>. Durant la formation, un appel à projets a été lancé pour sélectionner les 10 meilleures idées d'entreprises parmi une centaine de propositions. Après avoir conçu un <a href="https://clas-fashion.netlify.app/">prototype</a> et validé notre modèle économique, nous avons présenté notre projet lors d'un pitch devant environ 200 personnes. Mon projet d'entreprise a été sélectionné parmi les finalistes pour bénéficier d'un accompagnement.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="clasFashionModal" tabindex="-1" aria-labelledby="clasFashionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="clasFashionModalLabel">CLAS Fashion Center</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="clas fashion center.jpg" alt="CLAS Fashion Center - Créations artisanales" class="img-fluid mb-3">
+          <p>Fondé en 2021, CLAS Fashion Center forme des artisans en stylisme, accessoirisme et marketing digital. Nous avons formé 382 apprenants dans 11 pays africains, sans financement externe.</p>
+          <a href="https://www.tiktok.com/@miss.clas?_t=ZS-8wC3AEE5cQs&_r=1" target="_blank">Voir nos créations sur TikTok</a>
+          <a href="https://clas-fashion.netlify.app/"> Visiter notre site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="collection2024Modal" tabindex="-1" aria-labelledby="collection2024ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="collection2024ModalLabel">Collection 2024</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="Moi en rose.jpg" alt="Collection 2024 - Robe en tissu africain" class="img-fluid mb-3">
+          <p>Une des collection de robes conçue pour un défilé de fin d'année .</p>
+          <p><strong>Impact :</strong> Présentée à 500 spectateurs.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="atelierPerlesModal" tabindex="-1" aria-labelledby="atelierPerlesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="atelierPerlesModalLabel">Atelier Perles</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="2PN SOURIRE_2.jpg" alt="Atelier Perles - Accessoires artisanaux" class="img-fluid mb-3">
+          <p>Atelier de formation à la création d'accessoires en perles, destiné aux jeunes artisans souhaitant développer leurs compétences techniques et créatives.</p>
+          <p><strong>Impact :</strong> 25 artisans formés en 2023.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="marketingDigitalModal" tabindex="-1" aria-labelledby="marketingDigitalModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="marketingDigitalModalLabel">Formation Danyi </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="Danyi.jpg" alt="Formation Marketing Digital pour artisans" class="img-fluid mb-3">
+          <p>  </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="projetArtisanalModal" tabindex="-1" aria-labelledby="projetArtisanalModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="projetArtisanalModalLabel">Projet Artisanal</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="Agbalepedo1_2.jpg" alt="Projet Artisanal - Accessoire unique" class="img-fluid mb-3">
+          <p>Création d'accessoires uniques combinant tissus africains et perles, mettant en valeur les techniques traditionnelles avec une touche contemporaine.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="defileLomeModal" tabindex="-1" aria-labelledby="defileLomeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="defileLomeModalLabel">Formation Lome </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="Formation Adidogomé.jpg" alt="Défilé Lomé 2024 - Créations artisanales" class="img-fluid mb-3">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="formationKaraModal" tabindex="-1" aria-labelledby="formationKaraModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="formationKaraModalLabel">Formation Kara</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="Photo de CLAS FASHION (7).jpg" alt="Formation Kara - Stylisme et marketing" class="img-fluid mb-3">
+          <p>Formation intensive en conception de sac en perles à Kara, dans le nord du Togo, visant à développer les compétences des artisans locaux et à préserver les techniques traditionnelles.</p>
+          <p><strong>Impact :</strong> 15 participants formés sur 10 jours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
