@@ -5,75 +5,177 @@ body {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
-  }
-  /* =========================================================
-   HERO - NOUVEAU STYLE
-========================================================= */
+  }/* =====================================
+   PAGE D'ACCUEIL - PRÉSENTATION
+===================================== */
+
+/* =====================================
+   ACCUEIL - HERO
+===================================== */
 
 .hero {
   position: relative;
-  min-height: 100vh;
+  isolation: isolate;
+  min-height: 850px;
+  padding: 42px 24px 70px;
+  overflow: hidden;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
+  color: #fff;
 
-  background:
+  background-image:
     linear-gradient(
-      rgba(44, 62, 80, 0.72),
-      rgba(44, 62, 80, 0.72)
+      rgba(35, 55, 76, 0.88),
+      rgba(35, 55, 76, 0.88)
     ),
-    url("Photo de CLAS FASHION (7).jpg") center / cover no-repeat;
+    url("team_photo-unfpa.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-
-/* THÈME ORANGE */
-
-.hero-theme {
-  color: #f39c12;
-  font-size: 1.35rem;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  margin-bottom: 2rem;
-}
-
-
-/* NOM EN BLANC */
-
+/* Prénom en haut à gauche */
 .hero-name {
-  color: #ffffff;
-  font-size: 4.5rem;
-  font-weight: 700;
-  line-height: 1.1;
-  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.75);
+  position: absolute;
+  top: 24px;
+  left: 4%;
+  z-index: 2;
+  margin: 0;
+  color: #fff;
+  font-size: clamp(3.5rem, 8vw, 7rem);
+  font-weight: 800;
+  line-height: 1;
+  text-align: left;
 }
 
+/* Photo portrait ronde au-dessus du texte */
+.hero-portrait {
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+  margin: 16px auto 48px;
+  flex: 0 0 auto;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-radius: 50%;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.22);
+}
 
-/* TITRE EN BLANC */
+.hero-portrait img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 25%;
+}
 
-.hero-title {
-  color: #ffffff;
-  font-size: 1.7rem;
+/* Texte sous le portrait */
+.hero-content {
+  position: relative;
+  z-index: 1;
+  width: min(100%, 1180px);
+  margin: 0 auto;
+}
+
+.hero-kicker {
+  margin: 0 0 22px;
+  color: #f39c12;
+  font-size: clamp(1.15rem, 2.3vw, 2rem);
+  font-weight: 800;
+  line-height: 1.3;
+  letter-spacing: 0.02em;
+}
+
+.hero-role {
+  margin: 0 0 26px;
+  color: #fff;
+  font-size: clamp(1.2rem, 2.2vw, 2rem);
   font-weight: 500;
-  margin-top: 2rem;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  line-height: 1.4;
 }
-
-
-/* DESCRIPTION EN BLANC */
 
 .hero-description {
-  color: #ffffff;
-  font-size: 1.25rem;
-  font-weight: 400;
   max-width: 900px;
-  margin: 1.5rem auto;
-  line-height: 1.7;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  margin: 0 auto;
+  color: #fff;
+  font-size: clamp(1.05rem, 1.8vw, 1.65rem);
+  line-height: 1.6;
 }
 
+/* Boutons */
+.hero-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 34px;
+}
 
+.hero-actions .btn {
+  min-width: 180px;
+  padding: 13px 25px;
+  font-size: 1.05rem;
+  border-radius: 8px;
+}
 
+/* Tablettes et téléphones */
+@media (max-width: 768px) {
+  .hero {
+    min-height: 760px;
+    padding: 120px 18px 55px;
+  }
+
+  .hero-name {
+    top: 22px;
+    left: 5%;
+    font-size: clamp(3rem, 12vw, 4.5rem);
+  }
+
+  .hero-portrait {
+    width: 220px;
+    height: 220px;
+    margin: 0 auto 34px;
+  }
+
+  .hero-kicker {
+    margin-bottom: 16px;
+  }
+
+  .hero-role {
+    margin-bottom: 18px;
+  }
+
+  .hero-actions {
+    margin-top: 26px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    min-height: 720px;
+    padding: 105px 15px 45px;
+  }
+
+  .hero-portrait {
+    width: 185px;
+    height: 185px;
+    margin-bottom: 28px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-actions .btn {
+    width: min(100%, 280px);
+  }
+}
 /* =========================================================
    FOOTER
 ========================================================= */
